@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "powersharp", "powersharp\powersharp.csproj", "{81579A28-4A86-49B4-B468-C954DC792803}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81579A28-4A86-49B4-B468-C954DC792803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81579A28-4A86-49B4-B468-C954DC792803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81579A28-4A86-49B4-B468-C954DC792803}.Debug|x64.ActiveCfg = Debug|x64
+		{81579A28-4A86-49B4-B468-C954DC792803}.Debug|x64.Build.0 = Debug|x64
+		{81579A28-4A86-49B4-B468-C954DC792803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81579A28-4A86-49B4-B468-C954DC792803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81579A28-4A86-49B4-B468-C954DC792803}.Release|x64.ActiveCfg = Release|x64
+		{81579A28-4A86-49B4-B468-C954DC792803}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9292F280-66FE-4DB1-B8C2-A300B0645768}
+	EndGlobalSection
+EndGlobal

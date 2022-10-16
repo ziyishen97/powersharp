@@ -1,0 +1,10 @@
+C:\Users\ntsystem\source\repos\powersharp\powersharp\bin\x64\Release\powersharp.exe.config
+C:\Users\ntsystem\source\repos\powersharp\powersharp\bin\x64\Release\powersharp.exe
+C:\Users\ntsystem\source\repos\powersharp\powersharp\bin\x64\Release\powersharp.pdb
+C:\Users\ntsystem\source\repos\powersharp\powersharp\bin\x64\Release\System.Management.Automation.dll
+C:\Users\ntsystem\source\repos\powersharp\powersharp\obj\x64\Release\powersharp.csproj.AssemblyReference.cache
+C:\Users\ntsystem\source\repos\powersharp\powersharp\obj\x64\Release\powersharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\ntsystem\source\repos\powersharp\powersharp\obj\x64\Release\powersharp.csproj.CoreCompileInputs.cache
+C:\Users\ntsystem\source\repos\powersharp\powersharp\obj\x64\Release\powersharp.csproj.CopyComplete
+C:\Users\ntsystem\source\repos\powersharp\powersharp\obj\x64\Release\powersharp.exe
+C:\Users\ntsystem\source\repos\powersharp\powersharp\obj\x64\Release\powersharp.pdb
