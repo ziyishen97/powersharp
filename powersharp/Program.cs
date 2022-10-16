@@ -33,6 +33,7 @@ namespace powersharp
                 String arg2 = args[1].ToString();
                 if (!arg1.Substring(0, 3).Contains("/m:") || !arg2.Substring(0, 3).Contains("/c:"))
                 {
+                    Console.WriteLine("The 1st parameter should start with \"/m:\", the 2rd parameter should start with \"/c:\"\n");
                     Display();
                     return;
                 }
@@ -45,13 +46,14 @@ namespace powersharp
                 String arg3 = args[2].ToString();
                 if (!arg1.Substring(0,2).Contains("--") || !arg2.Substring(0, 3).Contains("/m:") || !arg3.Substring(0, 3).Contains("/c:"))
                 {
+                    Console.WriteLine("The 1st parameter should be --, the 2nd parameter should start with \"/m:\", the 3rd parameter should start with \"/c:\"\n");
                     Display();
                     return;
                 }
             }
             else
             {
-                Console.WriteLine("Not 2 or 3 parameters");
+                Console.WriteLine("Expect 2 or 3 parameters!\n");
                 Display();
                 return;
             }
